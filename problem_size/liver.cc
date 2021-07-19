@@ -5,10 +5,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define min(x,y)    ((x) < (y) ? (x) : (y))
-#define max(x,y)    ((x) > (y) ? (x) : (y))
-#define floord(n,d) (((n)<0) ? -((-(n)+(d)-1)/(d)) : (n)/(d))
-#define ceild(n,d)  ceil(((double)(n))/((double)(d)))
+#define min(lhs,rhs)    ((lhs) < (rhs) ? (lhs) : (rhs))
+#define max(lhs,rhs)    ((lhs) > (rhs) ? (lhs) : (rhs))
+#define floord(val,d) (((val)<0) ? -((-(val)+(d)-1)/(d)) : (val)/(d))
+#define ceild(val,d)  ceil(((double)(val))/((double)(d)))
 
 
 bool is_files_equal(const char * , const char * ) ;
