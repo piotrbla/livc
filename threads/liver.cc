@@ -9,7 +9,7 @@
 #define max(x,y)    ((x) > (y) ? (x) : (y))
 #define floord(n,d) (((n)<0) ? -((-(n)+(d)-1)/(d)) : (n)/(d))
 #define ceild(n,d)  ceil(((double)(n))/((double)(d)))
-#define floord(n,d) (((n)<0) ? -((-(n)+(d)-1)/(d)) : (n)/(d))
+
 
 bool is_files_equal(const char * , const char * ) ;
 void print_files_equal(const char * , const char * );
