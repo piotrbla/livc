@@ -33,10 +33,10 @@ void LMKernel6_04(int loop, int n, int *input_w, int **input_b)
 
   double start = omp_get_wtime();
 
-for (int c0 = 1; c0 <= loop; c0 += 1)
-  for (int c1 = 1; c1 < n; c1 += 1)
-    for (int c2 = c1; c2 < n; c2 += 1)
-       w[c2] += b[-c1 + c2][c2] * w[(c2 - (-c1 + c2)) - 1];
+for (int counter = 1; counter <= loop; counter += 1)
+  for (int var1 = 1; var1 < n; var1 += 1)
+    for (int var2 = var1; var2 < n; var2 += 1)
+       w[var2] += b[-var1 + var2][var2] * w[(var2 - (-var1 + var2)) - 1];
 
 
   double execution_time = omp_get_wtime() - start;
